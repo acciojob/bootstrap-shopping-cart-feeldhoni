@@ -1,16 +1,125 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .shopping-cart .block-heading h2 {
+      color: #3b99e0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+	.shopping-cart .block-heading p{
+		text-align:center;
+	}
+    .shopping-cart .product {
+      padding: 20px 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .shopping-cart .product img {
+      max-width: 100px;
+    }
+    .shopping-cart .summary {
+      background-color: #f7fbff;
+      border-top: 2px solid #5ea4f3;
+      padding: 30px;
+    }
+    .shopping-cart .summary h3 {
+      text-align: center;
+      color: #3b99e0;
+      margin-bottom: 20px;
+    }
+    .shopping-cart .summary .summary-item {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .shopping-cart .summary .summary-item:last-child {
+      border: none;
+    }
+    .shopping-cart .btn-checkout {
+      margin-top: 20px;
+      background-color: #3b99e0;
+      color: #fff;
+      width: 100%;
+    }
+    .shopping-cart .btn-checkout:hover {
+      background-color: #337fcc;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<div class="container shopping-cart my-5">
+  <!-- Page Heading -->
+  <div class="block-heading">
+    <h2>Shopping Cart</h2>
+	  <p>The customer is very ,the customer will be followed by the customer.now , as an urn, i have no right to be in possession of property.</p>
+  </div>
+
+  <div class="row">
+    <!-- Products Column -->
+    <div class="col-lg-8">
+      <!-- Product Block -->
+      <div class="product row align-items-center">
+        <div class="col-3">
+          <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd22ydBLTs_1ZBCVPuQD8oN0p4tTozq3APojMWOIFOTqzQpSJc5nGXudNGTBvW46soiFmHAAkXpJLklfTx87MwtqpJms5m6gfyEaVRLj_N7EAucxuK3ebeNBiVkfaRKVqU0wR73zX8qw&usqp=CAc" alt="Product 1" class="img-fluid">
+        </div>
+        <div class="col-6">
+          <h5>I Phone 15 pro </h5>
+          <p>Display 5 inches <br>Ram : 4gb <br>memory</p>
+        </div>
+        <div class="col-3 text-end">
+          <h5>$29.99</h5>
+        </div>
+      </div>
+      <!-- Repeat product blocks -->
+      <div class="product row align-items-center">
+        <div class="col-3">
+          <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd22ydBLTs_1ZBCVPuQD8oN0p4tTozq3APojMWOIFOTqzQpSJc5nGXudNGTBvW46soiFmHAAkXpJLklfTx87MwtqpJms5m6gfyEaVRLj_N7EAucxuK3ebeNBiVkfaRKVqU0wR73zX8qw&usqp=CAc" alt="Product 2" class="img-fluid">
+        </div>
+        <div class="col-6">
+          <h5>I Phone 15 pro </h5>
+          <p>Display 5 inches <br>Ram : 4gb <br>memory</p>
+        </div>
+        <div class="col-3 text-end">
+          <h5>$39.99</h5>
+        </div>
+      </div>
+      <div class="product row align-items-center">
+        <div class="col-3">
+          <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd22ydBLTs_1ZBCVPuQD8oN0p4tTozq3APojMWOIFOTqzQpSJc5nGXudNGTBvW46soiFmHAAkXpJLklfTx87MwtqpJms5m6gfyEaVRLj_N7EAucxuK3ebeNBiVkfaRKVqU0wR73zX8qw&usqp=CAc" alt="Product 3" class="img-fluid">
+        </div>
+        <div class="col-6">
+          <h5>I Phone 15 pro </h5>
+          <p>Display 5 inches <br>Ram : 4gb <br>memory</p>
+        </div>
+        <div class="col-3 text-end">
+          <h5>$19.99</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Column -->
+    <div class="col-lg-4">
+      <div class="summary">
+        <h3>Order Summary</h3>
+        <div class="summary-item d-flex justify-content-between">
+          <span>Subtotal</span><span>$89.97</span>
+        </div>
+        <div class="summary-item d-flex justify-content-between">
+          <span>Shipping</span><span>$5.00</span>
+        </div>
+        <div class="summary-item d-flex justify-content-between">
+          <strong>Total</strong><strong>$94.97</strong>
+        </div>
+        <button class="btn btn-checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
