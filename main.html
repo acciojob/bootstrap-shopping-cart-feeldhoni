@@ -55,7 +55,7 @@
   <!-- Page Heading -->
   <div class="block-heading">
     <h2>Shopping Cart</h2>
-	  <p>The customer is very ,the customer will be followed by the customer.now , as an urn, i have no right to be in possession of property.</p>
+	  <p>The customer is very ,the customer will be <br>followed by the customer.now , as an urn, i have <br>no right to be in possession of property.</p>
   </div>
 
   <div class="row">
@@ -66,12 +66,17 @@
         <div class="col-3">
           <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd22ydBLTs_1ZBCVPuQD8oN0p4tTozq3APojMWOIFOTqzQpSJc5nGXudNGTBvW46soiFmHAAkXpJLklfTx87MwtqpJms5m6gfyEaVRLj_N7EAucxuK3ebeNBiVkfaRKVqU0wR73zX8qw&usqp=CAc" alt="Product 1" class="img-fluid">
         </div>
-        <div class="col-6">
-          <h5>I Phone 15 pro </h5>
+        <div class="col-3">
+          <h5 class="text-primary">I Phone 15 pro </h5>
           <p>Display 5 inches <br>Ram : 4gb <br>memory</p>
         </div>
+        <div class="col-3">
+          <label for="number">Quantity:</label>
+          <br>
+          <input type="number" placeholder="0" style="width: 50px; text-align: center;">
+        </div>
         <div class="col-3 text-end">
-          <h5>$29.99</h5>
+          <h5>$120</h5>
         </div>
       </div>
       <!-- Repeat product blocks -->
@@ -79,24 +84,34 @@
         <div class="col-3">
           <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd22ydBLTs_1ZBCVPuQD8oN0p4tTozq3APojMWOIFOTqzQpSJc5nGXudNGTBvW46soiFmHAAkXpJLklfTx87MwtqpJms5m6gfyEaVRLj_N7EAucxuK3ebeNBiVkfaRKVqU0wR73zX8qw&usqp=CAc" alt="Product 2" class="img-fluid">
         </div>
-        <div class="col-6">
-          <h5>I Phone 15 pro </h5>
+        <div class="col-3">
+          <h5 class="text-primary">I Phone 15 pro </h5>
           <p>Display 5 inches <br>Ram : 4gb <br>memory</p>
         </div>
+        <div class="col-3">
+          <label for="number">Quantity</label>
+          <br>
+          <input type="number" placeholder="1" style="width: 50px; text-align: center;">
+        </div>
         <div class="col-3 text-end">
-          <h5>$39.99</h5>
+          <h5>$120</h5>
         </div>
       </div>
       <div class="product row align-items-center">
         <div class="col-3">
           <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd22ydBLTs_1ZBCVPuQD8oN0p4tTozq3APojMWOIFOTqzQpSJc5nGXudNGTBvW46soiFmHAAkXpJLklfTx87MwtqpJms5m6gfyEaVRLj_N7EAucxuK3ebeNBiVkfaRKVqU0wR73zX8qw&usqp=CAc" alt="Product 3" class="img-fluid">
         </div>
-        <div class="col-6">
-          <h5>I Phone 15 pro </h5>
+        <div class="col-3">
+          <h5 class="text-primary" >I Phone 15 pro </h5>
           <p>Display 5 inches <br>Ram : 4gb <br>memory</p>
         </div>
+        <div class="col-3">
+          <label for="number">Quantity</label>
+          <br>
+          <input type="number" placeholder="1" style="width: 50px; text-align: center;">
+        </div>
         <div class="col-3 text-end">
-          <h5>$19.99</h5>
+          <h5>$120</h5>
         </div>
       </div>
     </div>
@@ -106,13 +121,16 @@
       <div class="summary">
         <h3>Order Summary</h3>
         <div class="summary-item d-flex justify-content-between">
-          <span>Subtotal</span><span>$89.97</span>
+          <span>Subtotal</span><span>$360</span>
         </div>
         <div class="summary-item d-flex justify-content-between">
-          <span>Shipping</span><span>$5.00</span>
+          <span>Discount</span><span>$0</span>
         </div>
         <div class="summary-item d-flex justify-content-between">
-          <strong>Total</strong><strong>$94.97</strong>
+          <span>Shipping</span><span>$0</span>
+        </div>
+        <div class="summary-item d-flex justify-content-between">
+          <strong>Total</strong><strong>$360</strong>
         </div>
         <button class="btn btn-checkout">Checkout</button>
       </div>
